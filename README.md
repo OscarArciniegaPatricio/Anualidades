@@ -56,3 +56,45 @@ TiempoAqui=Tiempo(A=Anualidad,VF=ValorFinal,r=tasa)
 # Imprimo el resultado:
 TiempoAqui
 ```
+### Cálculo de la tasa del periodo
+Un inversionista desea saber cuál es la tasa de interés mensual a la que debe invertir $1,500 al final de cada mes, durante 10 años, para obtener un valor futuro de $250,000. 
+$VF$=250000
+$A$=1500
+$t$=120
+```{r}
+# Creamos objetos con valores de entrada:
+ValorFinal=250000
+Anualidad=1500
+tiempo=120
+
+# Calculamos la tasa usando bisección o Newton-Raphson
+TasaAqui=BiseccionTasaVF(VF=ValorFinal,A=Anualidad,t=tiempo)
+
+# Imprimo el resultado:
+TasaAqui
+```
+## Ejemplo de anualidades anticipadas
+### Cálculo del valor actual
+Un inversionista quiere saber cuál es el valor actual de una serie de pagos trimestrales de $5,000, durante 15 años, a una tasa de 6% anual compuesta trimestralmente. 
+$A$=5000
+$t$=60
+$i$=0.06
+
+# Creamos objetos con valores de entrada:
+Anualidad=5000
+tasa=0.015
+tiempo=60
+```{r}
+# Calculamos el valor actual
+ValorActualAqui=ValorActual(A=Anualidad,r=tasa,t=tiempo)
+
+# Imprimo el resultado:
+ValorActualAqui
+
+$r$=0.015
+```
+
+
+```{r}
+
+```
