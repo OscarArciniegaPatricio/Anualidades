@@ -123,7 +123,7 @@ Anualidad=6000
 tasa=0.0125
 
 # Calculamos el tiempo
-TiempoAqui2=Tiempo(A=Anualidad,VA=ValorActual,r=tasa)
+TiempoAqui2=TiempoVA(A=Anualidad,VA=ValorActual,r=tasa)
 
 # Imprimo el resultado:
 TiempoAqui2
