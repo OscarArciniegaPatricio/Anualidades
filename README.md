@@ -143,7 +143,7 @@ Anualidad=1000
 tiempo=60
 
 # Calculamos la tasa usando bisección o Newton-Raphson
-TasaAqui1=BiseccionTasaVA(VA=ValorActual,A=Anualidad,t=tiempo)
+TasaAqui1=NewtonRaphsonTasaVA(VA=ValorActual,A=Anualidad,t=tiempo)
 
 # Imprimo el resultado:
 TasaAqui1
