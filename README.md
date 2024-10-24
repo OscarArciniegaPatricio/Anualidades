@@ -38,3 +38,21 @@ AnualidadAqui=Anualidad(VF=ValorFinal,r=tasa,t=tiempo)
 # Imprimo el resultado:
 AnualidadAqui
 ```
+### Cálculo del número de pagos o plazo
+Un inversionista quiere saber cuántos meses necesitará invertir $800 mensuales a una tasa de 8% anual, compuesta mensualmente, para alcanzar un valor futuro de $100,000. 
+$VF$=100000
+$A$=800
+$i$=0.08
+$r$=0.006667
+```{r}
+# Creamos objetos con valores de entrada:
+ValorFinal=100000
+Anualidad=800
+tasa=0.006667
+
+# Calculamos el tiempo
+TiempoAqui=Tiempo(A=Anualidad,VF=ValorFinal,r=tasa)
+
+# Imprimo el resultado:
+TiempoAqui
+```
