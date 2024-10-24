@@ -1,0 +1,14 @@
+author: "Oscar Arciniega Patricio"
+format: html
+editor: visual
+---
+
+## Uso de fórmulas para anualidades vencidas
+
+Aquí cargo las funciones de mi anualidades vencidas desde mi Repositorio de: [GitHub](https://github.com/OscarArciniegaPatricio/Anualidades)
+
+Se cargan las funciones de manera remota:
+
+```{r}
+source("https://raw.githubusercontent.com/OscarArciniegaPatricio/Anualidades/refs/heads/main/FormulasAnualidad.R")
+```
