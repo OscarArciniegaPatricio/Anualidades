@@ -92,8 +92,59 @@ ValorActualAqui
 
 $r$=0.015
 ```
-
-
+### Cálculo de la anualidad
+Un inversionista ha recibido $50,000 y desea invertirlo para recibir pagos anuales por los próximos 20 años a una tasa de interés del 7% anual. ¿Cuánto recibiría anualmente? 
+$VA$=50000
+$t$=20
+$i$=0.07
 ```{r}
+# Creamos objetos con valores de entrada:
+ValorActual=50000
+tasa=0.07
+tiempo=20
 
+# Calculamos la anualidad
+AnualidadAqui2=Anualidad(VA=ValorActual,r=tasa,t=tiempo)
+
+# Imprimo el resultado:
+AnualidadAqui2
+
+```
+### Cálculo de número de pagos o plazo
+Un inversionista quiere saber cuántos años tardará en agotar una inversión de $200,000, si recibe pagos trimestrales de $6,000, a una tasa del 5% anual compuesta trimestralmente. 
+$VA$=200000
+$A$=6000
+$i$=0.05
+$r$=0.0125
+```{r}
+# Creamos objetos con valores de entrada:
+ValorActual=200000
+Anualidad=6000
+tasa=0.0125
+
+# Calculamos el tiempo
+TiempoAqui2=Tiempo(A=Anualidad,VA=ValorActual,r=tasa)
+
+# Imprimo el resultado:
+TiempoAqui2
+
+```
+
+
+### Cálculo de la tasa de periodo
+Un inversionista tiene $50,000 y quiere recibir pagos mensuales de $1,000 por los próximos 5 años. ¿Qué tasa de interés mensual recibiría? 
+$VA$=50000
+$A$=1000
+$t$=60
+```{r}
+# Creamos objetos con valores de entrada:
+ValorActual=50000
+Anualidad=1000
+tiempo=60
+
+# Calculamos la tasa usando bisección o Newton-Raphson
+TasaAqui1=BiseccionTasaVA(VA=ValorActual,A=Anualidad,t=tiempo)
+
+# Imprimo el resultado:
+TasaAqui1
 ```
