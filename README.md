@@ -14,7 +14,7 @@ tasa=0.005
 tiempo=60
 
 # Calculamos el valor futuro
-ValorFinalAqui=valorFinal(A=Anualidad,r=tasa,t=tiempo)
+ValorFinalAqui=ValorFinal(A=Anualidad,r=tasa,t=tiempo)
 
 # Imprimo el resultado:
 ValorFinalAqui
