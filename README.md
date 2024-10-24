@@ -1,4 +1,8 @@
 # Anualidades
+Con el siguiente código puede usted cargar las funciones de anualidades:
+```{r}
+source("https://raw.githubusercontent.com/OscarArciniegaPatricio/Anualidades/refs/heads/main/FormulasAnualidad.R")
+```
 ## Ejemplos de Anualidades Vencidas
 
 ### Cálculo del valor futuro
