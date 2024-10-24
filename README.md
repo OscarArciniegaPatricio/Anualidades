@@ -79,12 +79,11 @@ Un inversionista quiere saber cuál es el valor actual de una serie de pagos tri
 $A$=5000
 $t$=60
 $i$=0.06
-
+```{r}
 # Creamos objetos con valores de entrada:
 Anualidad=5000
 tasa=0.015
 tiempo=60
-```{r}
 # Calculamos el valor actual
 ValorActualAqui=ValorActual(A=Anualidad,r=tasa,t=tiempo)
 
