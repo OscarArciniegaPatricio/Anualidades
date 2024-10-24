@@ -104,7 +104,7 @@ tasa=0.07
 tiempo=20
 
 # Calculamos la anualidad
-AnualidadAqui2=Anualidad(VA=ValorActual,r=tasa,t=tiempo)
+AnualidadAqui2=AnualidadVA(VA=ValorActual,r=tasa,t=tiempo)
 
 # Imprimo el resultado:
 AnualidadAqui2
